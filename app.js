@@ -3,6 +3,7 @@ const morgan = require('morgan');
 const cors = require('cors');
 const app = express();
 const PORT = 5100;
+require('./config/db-config');
 
 app.use(cors());
 app.use(express.json())
